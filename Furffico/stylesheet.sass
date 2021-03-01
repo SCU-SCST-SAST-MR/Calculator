@@ -1,0 +1,37 @@
+// sass stylesheet.sass stylesheet.qss --no-source-map -s compressed
+
+$transparency: 0.8
+$basecolor : #e6e6e6
+$warning: #F7BCC4
+
+*
+    color: #000
+    font-family: Consolas
+    border: 0
+    padding: 5px 2px 5px 2px
+    background: rgba($basecolor,$transparency)
+
+QLabel#title
+    font-size: 15px
+QLabel#subscreen
+    font-size: 20px
+    padding-right:5px
+QLabel#screen
+    font-size: 25px
+    border-bottom: 1px solid $basecolor
+
+QPushButton.subkeyboard
+    font-size: 16px
+
+QPushButton.keyboard
+    font-size: 24px
+
+QPushButton.keyboard:hover,QPushButton.subkeyboard:hover
+    background: rgba($basecolor,1)
+
+QPushButton#close
+    background: rgba($warning,$transparency)
+    font-size: 15px
+    
+QPushButton#close:hover
+    background: rgba($warning,1.0)
